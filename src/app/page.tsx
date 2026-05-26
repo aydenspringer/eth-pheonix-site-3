@@ -1,9 +1,12 @@
 import { Header } from "@/components/sections/header"
 import { Hero } from "@/components/sections/hero"
 import { WhatIs } from "@/components/sections/what-is"
+import { Ecosystem } from "@/components/sections/ecosystem"
 import { PersonaCards } from "@/components/sections/persona-cards"
 import { WhatToExpect } from "@/components/sections/what-to-expect"
+import { Partners } from "@/components/sections/partners"
 import { WhyPhoenix } from "@/components/sections/why-phoenix"
+import { SponsorCta } from "@/components/sections/sponsor-cta"
 import { ClosingCta } from "@/components/sections/closing-cta"
 import { Footer } from "@/components/sections/footer"
 import Image from "next/image"
@@ -14,19 +17,18 @@ export default function HomePage() {
       <Header />
 
       <main>
-        {/* bg-background — dark */}
         <Hero />
 
-        {/* bg-muted — slightly lighter dark */}
         <WhatIs />
 
-        {/* bg-background — dark */}
+        <Ecosystem />
+
+        <WhatToExpect />
+        
         <PersonaCards />
 
-        {/* bg-muted — slightly lighter dark */}
-        <WhatToExpect />
 
-        {/* Full-bleed photo break — min 400px */}
+        {/* Full-bleed photo break */}
         <section className="relative min-h-[400px]">
           <Image
             src="/images/photo-break.webp"
@@ -36,14 +38,15 @@ export default function HomePage() {
           />
         </section>
 
-        {/* surface-light — light contrast moment */}
+        <Partners />
+
         <WhyPhoenix />
 
-        {/* bg-card — warm dark */}
+        <SponsorCta />
+
         <ClosingCta />
       </main>
 
-      {/* bg-background — dark */}
       <Footer />
     </>
   )

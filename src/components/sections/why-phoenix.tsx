@@ -28,18 +28,12 @@ const facts = [
   },
 ]
 
-const partners = [
-  { name: "AI Film 3", logo: "/images/logo-aifilm3.webp" },
-  { name: "BitAngels", logo: "/images/logo-bitangels.webp" },
-  { name: "Stand With Crypto AZ", logo: "/images/logo-standwithcrypto.webp" },
-  { name: "Devils DAO", logo: "/images/logo-devilsdao.webp" },
-]
 
 function WhyPhoenix() {
   return (
     <section
       id="why-phoenix"
-      className="surface-light bg-background py-24 lg:py-32"
+      className="bg-background py-24 lg:py-32"
     >
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Two-column offset layout */}
@@ -82,24 +76,6 @@ function WhyPhoenix() {
           </div>
         </div>
 
-        {/* Partner logos — grayscale, restrained, below the fold */}
-        <div className="mt-24 border-t border-border pt-12">
-          <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
-            Partners
-          </p>
-          <div className="mt-8 flex flex-wrap items-center gap-8 lg:gap-12">
-            {partners.map((partner) => (
-              <Image
-                key={partner.name}
-                src={partner.logo}
-                alt={`${partner.name} logo`}
-                width={96}
-                height={48}
-                className="h-12 w-24 rounded-sm object-contain grayscale"
-              />
-            ))}
-          </div>
-        </div>
       </div>
     </section>
   )

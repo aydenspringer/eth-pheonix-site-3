@@ -1,51 +1,15 @@
 import Image from "next/image"
 import { KitForm } from "@/components/shared/kit-form"
 
-/*
- * ============================================================
- * HERO A/B VARIANTS — swap the active variant below.
- * Only one should be uncommented at a time.
- * ============================================================
- */
-
-/* --- VARIANT: BUILDER-FIRST (active) ---
 const heroContent = {
   headline: (
     <>
-      Build.
-      <br />
-      Screen.
-      <br />
-      Ship.
+      A hackathon, a film festival, and a pitch competition in the desert.
     </>
   ),
   subheadline:
-    "ETH Phoenix brings together Ethereum developers, AI filmmakers, and investors for three days in Phoenix, AZ — September 25–27, 2026.",
+    "ETH Phoenix puts your work in front of the angel network that backed Ethereum, with sponsor bounties, protocol mentors, and AI Film 3. September 25–27, 2026.",
 }
-*/
-
-const heroContent = {
-  headline: (
-    <>
-      For people tired of shill-heavy events.
-    </>
-  ),
-  subheadline:
-    "If you are building products, producing AI-native films, or funding early-stage teams, ETH Phoenix gives you workshops, screenings, and vetted deal flow in one curated room.",
-}
-
-
-/* --- VARIANT: INVESTOR-FIRST ---
-const heroContent = {
-  headline: (
-    <>
-      The convergence you&apos;ve been looking for.
-    </>
-  ),
-  subheadline:
-    "Blockchain builders, AI film creators, and early-stage founders — together in Phoenix for three days. September 25–27, 2026.",
-}
-*/
 
 
 function Hero() {
