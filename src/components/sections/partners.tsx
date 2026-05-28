@@ -1,21 +1,27 @@
+import Image from "next/image"
+
 const confirmedPartners = [
   {
     name: "AI Film 3",
+    logo: "/images/logo-aifilm3.png",
     description:
       "The leading AI film festival bringing original AI-made work to real audiences — and co-producing ETH Phoenix\u2019s film festival track.",
   },
   {
     name: "BitAngels",
+    logo: "/images/logo-bitangels.webp",
     description:
       "The world\u2019s first digital currency angel group, founded in 2013, with early bets on Ethereum, ShapeShift, and Storj — running the pitch competition at ETH Phoenix.",
   },
   {
     name: "Stand With Crypto Arizona",
+    logo: "/images/logo-standwithcrypto.png",
     description:
       "Arizona\u2019s grassroots crypto advocacy coalition connecting builders and voters across the state.",
   },
   {
     name: "Devils DAO",
+    logo: "/images/logo-devilsdao.png",
     description:
       "ASU\u2019s student-led blockchain organization, plugged into the next generation of Ethereum builders coming out of the Valley.",
   },
@@ -56,6 +62,15 @@ function Partners() {
               key={partner.name}
               className="rounded-2xl border border-border bg-card p-8"
             >
+              <div className="mb-4 flex h-12 items-center">
+                <Image
+                  src={partner.logo}
+                  alt={`${partner.name} logo`}
+                  width={120}
+                  height={48}
+                  className="h-10 w-auto object-contain brightness-0 dark:brightness-100 dark:invert-0"
+                />
+              </div>
               <p className="font-heading text-base font-semibold text-foreground">
                 {partner.name}
               </p>

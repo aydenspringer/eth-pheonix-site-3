@@ -55,6 +55,20 @@ const images = [
       "Elevated photograph of the Phoenix Arizona downtown skyline at dusk. Modern glass buildings lit with warm interior light, Camelback Mountain visible in the background. Warm desert sunset colors in the sky, soft purple and orange gradients. Photorealistic urban landscape, no text.",
   },
   {
+    name: "what-is",
+    aspect: "3:4",
+    size: "2K",
+    prompt:
+      "Abstract digital art depicting the convergence of blockchain networks, artificial intelligence neural patterns, and cinematic film elements. Glowing Ethereum-inspired geometric shapes intertwine with flowing AI data streams and film strip motifs. Deep black background with vibrant orange, amber, and electric blue accents. Futuristic, high contrast, editorial quality. No text, no logos, no people.",
+  },
+  {
+    name: "ecosystem",
+    aspect: "3:4",
+    size: "2K",
+    prompt:
+      "Aerial photograph of Phoenix Arizona at twilight. Modern downtown skyline with glass towers reflecting warm sunset light, Camelback Mountain in the background, sprawling city grid stretching to the horizon. Semiconductor fabs and tech campus buildings visible in the mid-ground. Warm desert hues, golden hour lighting, atmospheric depth. Photorealistic editorial photography, no text, no overlays.",
+  },
+  {
     name: "logo-aifilm3",
     aspect: "1:1",
     size: "512",
