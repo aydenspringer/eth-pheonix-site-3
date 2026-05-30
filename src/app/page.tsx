@@ -29,9 +29,9 @@ export default function HomePage() {
 
 
         {/* Full-bleed photo break */}
-        <section className="relative min-h-[400px]">
+        <section className="relative min-h-[500px]">
           <Image
-            src="/images/photo-break.webp"
+            src="/images/photo-break.png"
             alt="Panoramic Arizona desert landscape at golden hour"
             fill
             className="object-cover"

@@ -13,7 +13,7 @@ function SponsorCta() {
             <p className="mt-4 max-w-xl text-base leading-relaxed text-muted-foreground lg:text-lg">
               Sponsor bounties at the hackathon. Present at the film festival.
               Host a side event. We&apos;ll build a package around what you
-              actually need — not a one-size-fits-all logo placement.
+              need and not a one-size-fits-all logo placement.
             </p>
           </div>
 

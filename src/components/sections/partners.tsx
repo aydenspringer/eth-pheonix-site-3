@@ -5,13 +5,13 @@ const confirmedPartners = [
     name: "AI Film 3",
     logo: "/images/logo-aifilm3.png",
     description:
-      "The leading AI film festival bringing original AI-made work to real audiences — and co-producing ETH Phoenix\u2019s film festival track.",
+      "The leading AI film festival bringing original AI-made work to audiences: co-producing ETH Phoenix\u2019s film festival track.",
   },
   {
     name: "BitAngels",
     logo: "/images/logo-bitangels.webp",
     description:
-      "The world\u2019s first digital currency angel group, founded in 2013, with early bets on Ethereum, ShapeShift, and Storj — running the pitch competition at ETH Phoenix.",
+      "The world\u2019s first digital currency angel group, founded in 2013, with early bets on Ethereum, ShapeShift, and Storj: running the pitch competition at ETH Phoenix.",
   },
   {
     name: "Stand With Crypto Arizona",
@@ -41,7 +41,7 @@ const pendingPartners = [
   {
     name: "Arizona Commerce Authority",
     description:
-      "The state agency driving Arizona\u2019s tech economy — including semiconductor investment and crypto-friendly policy.",
+      "The state agency driving Arizona\u2019s tech economy: including semiconductor investment and crypto-friendly policy.",
   },
 ]
 

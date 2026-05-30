@@ -67,7 +67,7 @@ function WhyPhoenix() {
 
           <div className="lg:col-span-5">
             <Image
-              src="/images/phoenix-skyline.webp"
+              src="/images/phoenix-skyline.png"
               alt="Aerial view of Phoenix, Arizona downtown skyline at dusk"
               width={1536}
               height={2048}

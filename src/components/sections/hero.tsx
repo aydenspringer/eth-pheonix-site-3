@@ -18,7 +18,7 @@ function Hero() {
       {/* Full-bleed background image */}
       <div className="absolute inset-0">
         <Image
-          src="/images/hero-bg.webp"
+          src="/images/hero-bg.png"
           alt="Atmospheric desert landscape with dramatic sunset lighting over Phoenix, Arizona mountains"
           fill
           className="object-cover"

@@ -45,8 +45,8 @@ function PersonaCards() {
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-base">
               Access a structured pitch competition vetted by the BitAngels
-              network — the same angel group that backed Ethereum and ShapeShift
-              early — plus a VIP investor track built for serious deal-making.
+              network: the same angel group that backed Ethereum and ShapeShift
+              early, plus a VIP investor track built for serious deal-making.
             </p>
           </div>
 
@@ -59,7 +59,7 @@ function PersonaCards() {
             </h3>
             <p className="mt-3 text-sm leading-relaxed text-muted-foreground lg:text-base">
               ETH Phoenix has a dedicated newcomer track with mentorship pairing,
-              plain-English workshops, and a free entry tier — so you can show up
+              plain-English workshops, and a free entry tier, so you can show up
               curious and leave with real context.
             </p>
           </div>

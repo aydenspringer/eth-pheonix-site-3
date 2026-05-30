@@ -14,7 +14,7 @@ function WhatToExpect() {
           <div className="grid grid-cols-1 items-center gap-8 py-16 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <Image
-                src="/images/event-build.webp"
+                src="/images/event-build.png"
                 alt="Developers collaborating at a hackathon workspace"
                 width={1920}
                 height={1080}
@@ -29,7 +29,7 @@ function WhatToExpect() {
                 Build
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
-                Spend three days deep in a hands-on hackathon — coding against
+                Spend three days deep in a hands-on hackathon: coding against
                 live sponsor bounties, getting mentorship from protocol engineers,
                 and demoing finished work to the people who fund it.
               </p>
@@ -55,7 +55,7 @@ function WhatToExpect() {
             </div>
             <div className="order-1 lg:order-2 lg:col-span-7">
               <Image
-                src="/images/event-screen.webp"
+                src="/images/event-screen.png"
                 alt="AI film screening in a theater with audience watching"
                 width={1920}
                 height={1080}
@@ -70,7 +70,7 @@ function WhatToExpect() {
           <div className="grid grid-cols-1 items-center gap-8 py-16 lg:grid-cols-12 lg:gap-16">
             <div className="lg:col-span-7">
               <Image
-                src="/images/event-connect.webp"
+                src="/images/event-connect.png"
                 alt="Startup pitch competition on stage with investors in audience"
                 width={1920}
                 height={1080}
@@ -86,8 +86,7 @@ function WhatToExpect() {
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
                 The BitAngels pitch competition puts early-stage founders in front
-                of the angel network that backed Ethereum — structured deal flow,
-                not awkward hallway networking.
+                of the angel network that backed Ethereum.
               </p>
             </div>
           </div>

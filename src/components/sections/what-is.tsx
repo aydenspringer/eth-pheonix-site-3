@@ -11,7 +11,7 @@ function WhatIs() {
             </p>
             <p className="mt-8 text-xl leading-relaxed text-foreground lg:text-2xl lg:leading-relaxed">
               A three-day festival at the intersection of Ethereum, AI, and film.
-              Part hackathon, part film festival, part pitch competition — built in
+              Part hackathon, part film festival, part pitch competition: built in
               partnership with AI Film 3 and BitAngels. Where capital meets
               conviction. Where builders find believers. Where the future gets funded.
             </p>
@@ -24,7 +24,7 @@ function WhatIs() {
 
           <div className="relative aspect-3/4 overflow-hidden rounded-2xl">
             <Image
-              src="/images/what-is.webp"
+              src="/images/what-is.png"
               alt="Abstract convergence of blockchain, AI, and film"
               fill
               className="object-cover"

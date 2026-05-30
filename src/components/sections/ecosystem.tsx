@@ -16,7 +16,7 @@ function Ecosystem() {
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-3/4 overflow-hidden rounded-2xl lg:order-first">
             <Image
-              src="/images/ecosystem.webp"
+              src="/images/ecosystem.png"
               alt="Phoenix Arizona skyline at twilight"
               fill
               className="object-cover"
@@ -31,7 +31,7 @@ function Ecosystem() {
               Intel is here. TSMC is here. Ethereum is taking over.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
-              Phoenix isn&apos;t an emerging tech market — it&apos;s an arrived one.
+              Phoenix isn&apos;t an emerging tech market: it&apos;s an arrived one.
               Arizona passed blockchain legislation before most states formed a
               committee. The semiconductor supply chain is relocating here. The
               crypto community already has roots.
