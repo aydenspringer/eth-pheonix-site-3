@@ -3,8 +3,8 @@ import Image from "next/image"
 function WhatToExpect() {
   return (
     <section id="what-to-expect" className="bg-background py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+      <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
+        <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
           What to Expect
         </p>
 
@@ -22,10 +22,10 @@ function WhatToExpect() {
               />
             </div>
             <div className="lg:col-span-5">
-              <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
                 01
               </p>
-              <h3 className="mt-4 font-heading text-5xl font-bold text-foreground lg:text-[64px] lg:leading-[1.05]">
+              <h3 className="mt-4 text-5xl text-foreground lg:text-[64px] lg:leading-[1.05]">
                 Build
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
@@ -41,10 +41,10 @@ function WhatToExpect() {
           {/* Screen: text left, image right */}
           <div className="grid grid-cols-1 items-center gap-8 py-16 lg:grid-cols-12 lg:gap-16">
             <div className="order-2 lg:order-1 lg:col-span-5">
-              <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
                 02
               </p>
-              <h3 className="mt-4 font-heading text-5xl font-bold text-foreground lg:text-[64px] lg:leading-[1.05]">
+              <h3 className="mt-4 text-5xl text-foreground lg:text-[64px] lg:leading-[1.05]">
                 Screen
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
@@ -78,10 +78,10 @@ function WhatToExpect() {
               />
             </div>
             <div className="lg:col-span-5">
-              <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+              <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
                 03
               </p>
-              <h3 className="mt-4 font-heading text-5xl font-bold text-foreground lg:text-[64px] lg:leading-[1.05]">
+              <h3 className="mt-4 text-5xl text-foreground lg:text-[64px] lg:leading-[1.05]">
                 Connect
               </h3>
               <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">

@@ -4,10 +4,10 @@ import { Button } from "@/components/ui/button"
 function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/40 bg-background/80 backdrop-blur-lg">
-      <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-6 lg:px-8">
+      <div className="mx-auto flex h-16 max-w-[90rem] items-center justify-between px-6 lg:px-8">
         <Link
           href="/"
-          className="font-heading text-lg font-bold tracking-tight text-foreground"
+          className="font-heading text-lg tracking-tight text-foreground"
         >
           ETH PHOENIX
         </Link>
@@ -37,7 +37,7 @@ function Header() {
         </nav>
 
         <Button
-          className="h-10 rounded-full px-5 font-heading text-xs uppercase tracking-wider"
+          className="h-10 rounded-full px-5 text-xs font-medium uppercase tracking-wider"
           asChild
         >
           <a href="#get-early-access">Get Early Access</a>

@@ -35,25 +35,25 @@ function WhyPhoenix() {
       id="why-phoenix"
       className="bg-background py-24 lg:py-32"
     >
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
         {/* Two-column offset layout */}
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
               Why Phoenix, Arizona?
             </p>
-            <h2 className="mt-6 font-heading text-5xl font-bold leading-tight text-foreground lg:text-[64px] lg:leading-[1.05]">
+            <h2 className="mt-6 text-5xl leading-tight text-foreground lg:text-[64px] lg:leading-[1.05]">
               Why Phoenix?
             </h2>
 
             <div className="mt-12 space-y-8">
               {facts.map((fact, i) => (
                 <div key={i} className="flex gap-6">
-                  <span className="font-heading text-sm font-medium text-primary">
+                  <span className="text-sm font-medium tabular-nums text-primary">
                     {String(i + 1).padStart(2, "0")}
                   </span>
                   <div>
-                    <p className="font-heading text-base font-semibold text-foreground">
+                    <p className="text-base font-semibold text-foreground">
                       {fact.title}
                     </p>
                     <p className="mt-1 text-sm leading-relaxed text-muted-foreground">

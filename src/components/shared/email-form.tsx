@@ -48,7 +48,7 @@ function EmailForm({ className = "" }: EmailFormProps) {
         <Button
           type="submit"
           size="lg"
-          className="h-12 shrink-0 rounded-lg px-6 font-heading text-xs uppercase tracking-wider"
+          className="h-12 shrink-0 rounded-lg px-6 text-xs font-medium uppercase tracking-wider"
         >
           Get Early Access
         </Button>

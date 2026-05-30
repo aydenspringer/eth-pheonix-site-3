@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Inter, Space_Grotesk } from "next/font/google";
+import { Noto_Sans, Noto_Serif } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "ETH Phoenix — Ethereum, AI & Film Festival | Phoenix, AZ 2026",
@@ -15,14 +15,14 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const inter = Inter({
+const notoSans = Noto_Sans({
   subsets: ["latin"],
-  variable: "--font-inter",
+  variable: "--font-noto-sans",
 });
 
-const spaceGrotesk = Space_Grotesk({
+const notoSerif = Noto_Serif({
   subsets: ["latin"],
-  variable: "--font-space-grotesk",
+  variable: "--font-noto-serif",
   weight: ["400", "500", "600", "700"],
 });
 
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${inter.variable} ${spaceGrotesk.variable}`}
+      className={`dark ${notoSans.variable} ${notoSerif.variable}`}
     >
       <body>{children}</body>
     </html>

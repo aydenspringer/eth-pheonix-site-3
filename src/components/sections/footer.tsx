@@ -1,10 +1,10 @@
 function Footer() {
   return (
     <footer className="border-t border-border bg-background py-12 lg:py-16">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
         <div className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
           <div>
-            <p className="font-heading text-lg font-bold tracking-tight text-foreground">
+            <p className="font-heading text-lg tracking-tight text-foreground">
               ETH PHOENIX
             </p>
             <p className="mt-2 text-sm text-muted-foreground">

@@ -48,11 +48,11 @@ const pendingPartners = [
 function Partners() {
   return (
     <section id="partners" className="surface-light bg-background py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
-        <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+      <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
+        <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
           Built With
         </p>
-        <h2 className="mt-6 font-heading text-3xl font-bold leading-tight text-foreground lg:text-4xl">
+        <h2 className="mt-6 text-3xl leading-tight text-foreground lg:text-4xl">
           Our Partners
         </h2>
 
@@ -71,7 +71,7 @@ function Partners() {
                   className="h-10 w-auto object-contain brightness-0 dark:brightness-100 dark:invert-0"
                 />
               </div>
-              <p className="font-heading text-base font-semibold text-foreground">
+              <p className="text-base font-semibold text-foreground">
                 {partner.name}
               </p>
               <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
@@ -82,7 +82,7 @@ function Partners() {
         </div>
 
         <div className="mt-12 border-t border-border pt-12">
-          <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-muted-foreground">
+          <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
             In Conversation
           </p>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
@@ -91,7 +91,7 @@ function Partners() {
                 key={partner.name}
                 className="rounded-xl border border-dashed border-border p-6"
               >
-                <p className="font-heading text-sm font-semibold text-foreground">
+                <p className="text-sm font-semibold text-foreground">
                   {partner.name}
                 </p>
                 <p className="mt-2 text-xs leading-relaxed text-muted-foreground">

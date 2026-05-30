@@ -4,10 +4,10 @@ function ClosingCta() {
   return (
     <section className="bg-card py-24 lg:py-32">
       <div className="mx-auto max-w-xl px-6 text-center lg:px-8">
-        <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+        <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
           September 25–27, 2026
         </p>
-        <h2 className="mt-6 font-heading text-5xl font-bold text-foreground lg:text-[64px] lg:leading-[1.05]">
+        <h2 className="mt-6 text-5xl text-foreground lg:text-[64px] lg:leading-[1.05]">
           Get Early Access
         </h2>
         <p className="mt-4 text-sm leading-relaxed text-muted-foreground lg:text-base">

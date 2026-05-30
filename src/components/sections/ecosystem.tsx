@@ -12,7 +12,7 @@ const stats = [
 function Ecosystem() {
   return (
     <section className="bg-muted py-24 lg:py-32">
-      <div className="mx-auto max-w-7xl px-6 lg:px-8">
+      <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2">
           <div className="relative aspect-3/4 overflow-hidden rounded-2xl lg:order-first">
             <Image
@@ -24,10 +24,10 @@ function Ecosystem() {
           </div>
 
           <div>
-            <p className="font-heading text-[11px] uppercase tracking-[0.2em] text-primary">
+            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
               The Ecosystem
             </p>
-            <h2 className="mt-6 font-heading text-3xl font-bold leading-tight text-foreground lg:text-4xl">
+            <h2 className="mt-6 text-3xl leading-tight text-foreground lg:text-4xl">
               Intel is here. TSMC is here. Ethereum is taking over.
             </h2>
             <p className="mt-4 text-base leading-relaxed text-muted-foreground lg:text-lg">
@@ -42,7 +42,7 @@ function Ecosystem() {
         <div className="mt-16 grid grid-cols-2 gap-8 md:grid-cols-3 lg:grid-cols-6">
           {stats.map((stat) => (
             <div key={stat.label}>
-              <p className="font-heading text-3xl font-bold text-primary lg:text-4xl">
+              <p className="font-heading text-3xl text-primary lg:text-4xl">
                 {stat.value}
               </p>
               <p className="mt-2 text-xs leading-relaxed text-muted-foreground lg:text-sm">
