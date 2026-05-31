@@ -8,7 +8,7 @@ const heroContent = {
     </>
   ),
   subheadline:
-    "ETH Phoenix puts your work in front of the angel network that backed Ethereum, with sponsor bounties, protocol mentors, and AI Film 3. September 25–27, 2026.",
+    "ETH Phoenix puts your work in front of the BitAngels network that backed Ethereum, with sponsor bounties, protocol mentors, and AI Film 3. September 25–27, 2026.",
 }
 
 
