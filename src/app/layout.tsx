@@ -1,7 +1,7 @@
 import "@/styles/globals.css";
 
 import { type Metadata } from "next";
-import { Noto_Sans, Noto_Serif } from "next/font/google";
+import { Figtree, Archivo } from "next/font/google";
 
 export const metadata: Metadata = {
   title: "ETH Phoenix — Ethereum, AI & Film Festival | Phoenix, AZ 2026",
@@ -15,15 +15,15 @@ export const metadata: Metadata = {
   icons: [{ rel: "icon", url: "/favicon.ico" }],
 };
 
-const notoSans = Noto_Sans({
+const figtree = Figtree({
   subsets: ["latin"],
-  variable: "--font-noto-sans",
+  variable: "--font-figtree",
 });
 
-const notoSerif = Noto_Serif({
+const archivo = Archivo({
   subsets: ["latin"],
-  variable: "--font-noto-serif",
-  weight: ["400", "500", "600", "700"],
+  variable: "--font-archivo",
+  weight: ["400", "500", "600", "700", "800", "900"],
 });
 
 export default function RootLayout({
@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`dark ${notoSans.variable} ${notoSerif.variable}`}
+      className={`${figtree.variable} ${archivo.variable}`}
     >
       <body>{children}</body>
     </html>

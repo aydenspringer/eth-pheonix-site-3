@@ -1,4 +1,10 @@
+"use client"
+
 import Image from "next/image"
+import { motion } from "framer-motion"
+
+const ease = [0.16, 1, 0.3, 1] as const
+const viewport = { once: true, margin: "-5% 0px -5% 0px" } as const
 
 const facts = [
   {
@@ -28,54 +34,70 @@ const facts = [
   },
 ]
 
+function FactItem({ fact, index }: { fact: (typeof facts)[number]; index: number }) {
+  return (
+    <motion.div
+      className="flex gap-6"
+      initial={{ opacity: 0, x: -20 }}
+      whileInView={{ opacity: 1, x: 0 }}
+      viewport={viewport}
+      transition={{ duration: 0.5, delay: index * 0.06, ease }}
+    >
+      <span className="text-sm font-medium tabular-nums text-primary">
+        {String(index + 1).padStart(2, "0")}
+      </span>
+      <div>
+        <p className="text-base font-semibold text-foreground">
+          {fact.title}
+        </p>
+        <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
+          {fact.description}
+        </p>
+      </div>
+    </motion.div>
+  )
+}
 
 function WhyPhoenix() {
   return (
-    <section
-      id="why-phoenix"
-      className="bg-background py-24 lg:py-32"
-    >
+    <section id="why-phoenix" className="surface-elevated bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
-        {/* Two-column offset layout */}
         <div className="grid grid-cols-1 gap-16 lg:grid-cols-12">
           <div className="lg:col-span-7">
-            <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
-              Why Phoenix, Arizona?
-            </p>
-            <h2 className="mt-6 text-5xl leading-tight text-foreground lg:text-[64px] lg:leading-[1.05]">
+            <motion.h2
+              className="text-5xl leading-tight text-foreground lg:text-[64px] lg:leading-[1.05]"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
+              transition={{ duration: 0.6, ease }}
+            >
               Why Phoenix?
-            </h2>
+            </motion.h2>
 
             <div className="mt-12 space-y-8">
               {facts.map((fact, i) => (
-                <div key={i} className="flex gap-6">
-                  <span className="text-sm font-medium tabular-nums text-primary">
-                    {String(i + 1).padStart(2, "0")}
-                  </span>
-                  <div>
-                    <p className="text-base font-semibold text-foreground">
-                      {fact.title}
-                    </p>
-                    <p className="mt-1 text-sm leading-relaxed text-muted-foreground">
-                      {fact.description}
-                    </p>
-                  </div>
-                </div>
+                <FactItem key={i} fact={fact} index={i} />
               ))}
             </div>
           </div>
 
-          <div className="lg:col-span-5">
+          <motion.div
+            className="overflow-hidden rounded-xl lg:col-span-5"
+            initial={{ opacity: 0, scale: 1.04 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
+            transition={{ duration: 1, ease }}
+          >
             <Image
               src="/images/phoenix-skyline.png"
               alt="Aerial view of Phoenix, Arizona downtown skyline at dusk"
               width={1536}
               height={2048}
               className="w-full rounded-xl"
+              sizes="(max-width: 1024px) 100vw, 42vw"
             />
-          </div>
+          </motion.div>
         </div>
-
       </div>
     </section>
   )

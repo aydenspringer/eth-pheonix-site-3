@@ -1,4 +1,10 @@
+"use client"
+
 import Image from "next/image"
+import { motion } from "framer-motion"
+
+const ease = [0.16, 1, 0.3, 1] as const
+const viewport = { once: true, margin: "-8% 0px -8% 0px" } as const
 
 const confirmedPartners = [
   {
@@ -45,51 +51,73 @@ const pendingPartners = [
   },
 ]
 
+function PartnerCard({
+  partner,
+  index,
+}: {
+  partner: (typeof confirmedPartners)[number]
+  index: number
+}) {
+  return (
+    <motion.div
+      className="rounded-2xl border border-border bg-card p-8"
+      initial={{ opacity: 0, y: 24 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={viewport}
+      transition={{ duration: 0.6, delay: index * 0.08, ease }}
+    >
+      <div className="mb-4 flex h-12 items-center">
+        <Image
+          src={partner.logo}
+          alt={`${partner.name} logo`}
+          width={120}
+          height={48}
+          className="h-10 w-auto object-contain"
+        />
+      </div>
+      <p className="text-base font-semibold text-foreground">
+        {partner.name}
+      </p>
+      <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
+        {partner.description}
+      </p>
+    </motion.div>
+  )
+}
+
 function Partners() {
   return (
-    <section id="partners" className="surface-light bg-background py-24 lg:py-32">
+    <section id="partners" className="bg-background py-24 lg:py-32">
       <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
-        <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-primary">
-          Built With
-        </p>
-        <h2 className="mt-6 text-3xl leading-tight text-foreground lg:text-4xl">
+        <motion.h2
+          className="text-3xl leading-tight text-foreground lg:text-4xl"
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, margin: "-10% 0px -10% 0px" }}
+          transition={{ duration: 0.6, ease }}
+        >
           Our Partners
-        </h2>
+        </motion.h2>
 
         <div className="mt-12 grid grid-cols-1 gap-6 md:grid-cols-2">
-          {confirmedPartners.map((partner) => (
-            <div
-              key={partner.name}
-              className="rounded-2xl border border-border bg-card p-8"
-            >
-              <div className="mb-4 flex h-12 items-center">
-                <Image
-                  src={partner.logo}
-                  alt={`${partner.name} logo`}
-                  width={120}
-                  height={48}
-                  className="h-10 w-auto object-contain brightness-0 dark:brightness-100 dark:invert-0"
-                />
-              </div>
-              <p className="text-base font-semibold text-foreground">
-                {partner.name}
-              </p>
-              <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                {partner.description}
-              </p>
-            </div>
+          {confirmedPartners.map((partner, i) => (
+            <PartnerCard key={partner.name} partner={partner} index={i} />
           ))}
         </div>
 
         <div className="mt-12 border-t border-border pt-12">
-          <p className="text-[11px] font-medium uppercase tracking-[0.2em] text-muted-foreground">
-            In Conversation
+          <p className="text-sm font-medium text-muted-foreground">
+            In conversation
           </p>
           <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
-            {pendingPartners.map((partner) => (
-              <div
+            {pendingPartners.map((partner, i) => (
+              <motion.div
                 key={partner.name}
                 className="rounded-xl border border-dashed border-border p-6"
+                initial={{ opacity: 0, y: 16 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={viewport}
+                transition={{ duration: 0.5, delay: 0.1 + i * 0.07, ease }}
               >
                 <p className="text-sm font-semibold text-foreground">
                   {partner.name}
@@ -97,7 +125,7 @@ function Partners() {
                 <p className="mt-2 text-xs leading-relaxed text-muted-foreground">
                   {partner.description}
                 </p>
-              </div>
+              </motion.div>
             ))}
           </div>
         </div>

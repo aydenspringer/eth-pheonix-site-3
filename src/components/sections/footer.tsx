@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="border-t border-border bg-background py-12 lg:py-16">
+    <footer className="border-t border-border bg-muted py-12 lg:py-16">
       <div className="mx-auto max-w-[90rem] px-6 lg:px-8">
         <div className="flex flex-col items-start gap-8 md:flex-row md:items-center md:justify-between">
           <div>
@@ -15,21 +15,15 @@ function Footer() {
           <div className="flex flex-wrap items-center gap-x-6 gap-y-2">
             <a
               href="https://x.com/ETHPhoenix"
-              className="py-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               target="_blank"
               rel="noopener noreferrer"
             >
               X / Twitter
             </a>
             <a
-              href="#telegram"
-              className="py-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Telegram
-            </a>
-            <a
               href="https://instagram.com/ETHPhoenix"
-              className="py-1 text-sm text-muted-foreground transition-colors hover:text-foreground"
+              className="py-2 text-sm text-muted-foreground transition-colors hover:text-foreground"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -44,20 +38,14 @@ function Footer() {
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2">
             <a
-              href="#privacy"
-              className="py-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
-            >
-              Privacy Policy
-            </a>
-            <a
-              href="#partner"
-              className="py-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
+              href="mailto:partners@ethphoenix.com"
+              className="py-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               Partner With Us
             </a>
             <a
-              href="#speak"
-              className="py-1 text-xs text-muted-foreground transition-colors hover:text-foreground"
+              href="mailto:speakers@ethphoenix.com"
+              className="py-2 text-xs text-muted-foreground transition-colors hover:text-foreground"
             >
               Speak at ETH Phoenix
             </a>
